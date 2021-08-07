@@ -18,35 +18,42 @@
 
 LOCAL_PATH := device/meizu/m2181
 
-# A/B
-AB_OTA_PARTITIONS += \
-    boot \
-    system \
-    vendor
+BOARD_BOOT_HEADER_VERSION := 3
 
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+# System as root
+BOARD_SUPPRESS_SECURE_ERASE := true
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+#A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# Boot control HAL
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
+PRODUCT_PACKAGES_DEBUG += update_engine_client
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+  update_engine \
+  update_engine_client \
+  update_engine_sideload \
+  update_verifier
 
 PRODUCT_PACKAGES += \
-    bootctrl.lahaina
+    checkpoint_gc \
+    otapreopt_script
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-service \
     bootctrl.lahaina \
-    libgptutils \
-    libz \
-    libcutils
-
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh \
-    update_engine \
-    update_verifier \
-    update_engine_sideload
+    bootctrl.lahaina.recovery
