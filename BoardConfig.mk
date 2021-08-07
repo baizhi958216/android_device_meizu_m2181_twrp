@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/meizu/meizu18
+DEVICE_PATH := device/meizu/m2181
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -37,7 +37,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := meizu18
+TARGET_OTA_ASSERT_DEVICE := m2181
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -61,8 +61,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/meizu/meizu18
-TARGET_KERNEL_CONFIG := meizu18_defconfig
+TARGET_KERNEL_SOURCE := kernel/meizu/m2181
+TARGET_KERNEL_CONFIG := m2181_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina

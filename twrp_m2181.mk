@@ -22,16 +22,16 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from meizu18 device
-$(call inherit-product, device/meizu/meizu18/device.mk)
+# Inherit from m2181 device
+$(call inherit-product, device/meizu/m2181/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := meizu18
-PRODUCT_NAME := omni_meizu18
+PRODUCT_DEVICE := m2181
+PRODUCT_NAME := twrp_m2181
 PRODUCT_BRAND := meizu
 PRODUCT_MODEL := MEIZU 18
 PRODUCT_MANUFACTURER := meizu

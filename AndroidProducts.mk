@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_meizu18.mk
+     $(LOCAL_DIR)/twrp_m2181.mk

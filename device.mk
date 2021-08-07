@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/meizu/meizu18
+LOCAL_PATH := device/meizu/m2181
 
 # A/B
 AB_OTA_PARTITIONS += \
