@@ -13,7 +13,7 @@
 
 # Device configuration for Meizu 18
 
-The Meizu 18 (codenamed *"M2181"*) are middle-end smartphones from Meizu.
+The Meizu 18 (codenamed *"M2181"*) are high-end smartphones from Meizu.
 
 Meizu 18 was announced and released in March 2021.
 
