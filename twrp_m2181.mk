@@ -17,24 +17,13 @@
 #
 
 
-# Inherit from m2181 device
 $(call inherit-product, device/meizu/m2181/device.mk)
-
-# Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Ihnerit virtual_ab_ota product
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-
-# Include GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Device identifier. This must come after all inclusions
+PRODUCT_NAME :=twrp_m2181
 PRODUCT_DEVICE := m2181
-PRODUCT_NAME := twrp_m2181
 PRODUCT_BRAND := meizu
 PRODUCT_MODEL := MEIZU 18
 PRODUCT_MANUFACTURER := meizu
-PRODUCT_RELEASE_NAME := meizu MEIZU 18
+
+PRODUCT_GMS_CLIENTID_BASE := android-meizu

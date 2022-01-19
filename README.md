@@ -2,12 +2,12 @@
 
 |                   ISSUES： | FIX： |
 | -------------------------: | :---- |
-|            MTP（电脑连接） | X     |
+|            MTP（电脑连接） | √     |
 |               Boot（开机） | X     |
-| Select Slot（A/B分区选择） | X     |
+| Select Slot（A/B分区选择） | √     |
 |           Vibrator（马达） | X     |
 |            OTG（外设连接） | X     |
-|            Decrypt（解密） | X     |
+|            Decrypt（解密） | √     |
 
 太惨了，除了能进TWRP看看以外啥也不行/(ㄒoㄒ)/~~
 
