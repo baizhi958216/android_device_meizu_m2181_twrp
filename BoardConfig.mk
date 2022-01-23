@@ -78,7 +78,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom andro
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := m2181
+TARGET_OTA_ASSERT_DEVICE := m2181|meizu18
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x6000000
