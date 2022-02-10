@@ -9,8 +9,6 @@
 |            OTG（外设连接） | X     |
 |            Decrypt（解密） | √     |
 
-太惨了，除了能进TWRP看看以外啥也不行/(ㄒoㄒ)/~~
-
 # Device configuration for Meizu 18
 
 The Meizu 18 (codenamed *"M2181"*) are high-end smartphones from Meizu.
